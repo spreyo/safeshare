@@ -10,6 +10,10 @@ body {
 
 
 #header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: #E8EAEC;
     font-family: Poppins;
@@ -18,6 +22,19 @@ body {
     font-weight: 700;
     line-height: normal;
 }
+
+#question-mark {
+    font-size: 32px;
+    align-self: flex-start;
+    animation: pulse 2s infinite;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#question-mark:hover {
+    color: #82a294;
+}
+
 
 #imgDiv {
     width: 800px;
@@ -75,4 +92,19 @@ body {
 #copyIcon svg:hover {
     fill: #82a294;
 
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+
+    }
+
+    70% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
 }

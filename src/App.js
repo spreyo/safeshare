@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { Route } from 'wouter';
 import { View } from './components/View';
 import { NotFound } from './components/NotFound';
+import { About } from './components/About';
 
 function App() {
   const [shareURL, setShareURL] = useState('');
@@ -111,7 +112,7 @@ function App() {
   return (
     <>
       <Route path='/'>
-        <h1 id="header">safeshare</h1>
+        <h1 id="header">safeshare<p id="question-mark" onClick={() => window.location = "/about"}>?</p></h1>
         <div id="imgDiv" >
           {/* <input type="file" accept="image/*" placeholder='image' id="fileInput"></input> */}
           <img id="image"></img>
@@ -124,9 +125,13 @@ function App() {
       <Route path='/view'>
         <View />
       </Route>
+      <Route path="/about">
+        <About />
+      </Route>
       <Route path='/404'>
         <NotFound />
       </Route>
+
     </>
   );
 }
