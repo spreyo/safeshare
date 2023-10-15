@@ -1,0 +1,43 @@
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    margin: 0;
+}
+
+#not-found {
+    text-align: center;
+    color: #86CFB2;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0;
+}
+
+#go-back {
+    text-align: center;
+    color: #E8EAEC;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: underline;
+    text-decoration-color: #81b8b2;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#go-back:hover {
+    text-decoration-color: #E8EAEC;
+    color: #81b8b2;
+
+}
